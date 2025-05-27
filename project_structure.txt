@@ -1,0 +1,13 @@
+JDAMIE-cleans/
+├── index.html
+├── about.html
+├── services.html
+├── contact.html
+├── assets/
+│   ├── images/          ← logo, hero, service icons
+│   └── scripts/
+│       └── main.js      ← nav toggle, JS features
+
+
+
+

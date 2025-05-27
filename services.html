@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="JDAMIE Cleans – Our Cleaning Services." />
+  <title>JDAMIE Cleans | Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="flex flex-col min-h-screen bg-white text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-blue-900 text-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between flex-wrap gap-4">
+      <a href="index.html" class="text-2xl font-bold tracking-tight">JDAMIE Cleans</a>
+      <nav class="flex gap-6 text-sm font-medium" aria-label="Main navigation">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="services.html" class="underline decoration-yellow-400">Services</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE TITLE & INTRO -->
+  <main class="flex-grow max-w-6xl mx-auto px-4 py-16">
+    <h1 class="text-4xl font-extrabold text-blue-900 mb-4 text-center">Our Cleaning Services</h1>
+    <p class="text-center text-gray-700 max-w-3xl mx-auto mb-12 leading-relaxed">
+      At JDAMIE Cleans, we are committed to providing exceptional cleaning services tailored to your specific needs.
+      Whether for your home or business, our expert team uses the latest techniques and eco-friendly products to
+      ensure a spotless and healthy environment.
+    </p>
+
+    <!-- ANCHOR LINKS -->
+    <div class="flex justify-center gap-8 mb-16 text-yellow-600 font-semibold">
+      <a href="#residential" class="hover:underline">Residential</a>
+      <a href="#commercial" class="hover:underline">Commercial</a>
+      <a href="#specialized" class="hover:underline">Specialized</a>
+    </div>
+
+    <!-- SERVICES GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+      <!-- Residential Cleaning -->
+      <section id="residential" class="border rounded-lg p-6 shadow hover:shadow-lg transition max-w-md mx-auto flex flex-col">
+        <img
+          src="assets/images/residential-cleaning.jpg"
+          alt="Residential Cleaning"
+          class="rounded-md mb-4 object-cover h-40 w-full"
+          loading="lazy"
+        />
+        <h2 class="text-2xl font-semibold mb-1 text-blue-900 text-center">Residential Cleaning</h2>
+        <p class="text-gray-600 mb-4 text-center text-sm">
+          Keep your home sparkling clean with flexible plans to suit your lifestyle.
+        </p>
+        <ul class="list-disc list-inside space-y-1 text-gray-700 flex-grow">
+          <li>Regular House Cleaning</li>
+          <li>Deep Cleaning</li>
+          <li>End of Tenancy Cleaning</li>
+          <li>Appliance Cleaning</li>
+          <li>Carpet and Upholstery Cleaning</li>
+          <li>Window Cleaning</li>
+          <li>Holiday Home / Airbnb Cleaning</li>
+          <li>After-Builders Cleaning</li>
+        </ul>
+        <a href="contact.html" class="mt-6 bg-yellow-400 text-white font-semibold py-2 px-4 rounded shadow hover:bg-yellow-500 transition self-center max-w-max">
+          Book Residential Cleaning
+        </a>
+      </section>
+
+      <!-- Commercial Cleaning -->
+      <section id="commercial" class="border rounded-lg p-6 shadow hover:shadow-lg transition max-w-md mx-auto flex flex-col">
+        <img
+          src="assets/images/commercial-cleaning.jpg"
+          alt="Commercial Cleaning"
+          class="rounded-md mb-4 object-cover h-40 w-full"
+          loading="lazy"
+        />
+        <h2 class="text-2xl font-semibold mb-1 text-blue-900 text-center">Commercial Cleaning</h2>
+        <p class="text-gray-600 mb-4 text-center text-sm">
+          Reliable and thorough cleaning for offices, retail, healthcare, and more.
+        </p>
+        <ul class="list-disc list-inside space-y-1 text-gray-700 flex-grow">
+          <li>Office Cleaning</li>
+          <li>Gym and Leisure Centre Cleaning</li>
+          <li>Hotel and Hospitality Cleaning</li>
+          <li>Post-Construction Cleaning</li>
+          <li>Restaurant and Kitchen Cleaning</li>
+          <li>Retail and Shopping Centre Cleaning</li>
+          <li>School &amp; Educational Facility Cleaning</li>
+          <li>Medical Facility Cleaning</li>
+          <li>Industrial Cleaning</li>
+        </ul>
+        <a href="contact.html" class="mt-6 bg-yellow-400 text-white font-semibold py-2 px-4 rounded shadow hover:bg-yellow-500 transition self-center max-w-max">
+          Book Commercial Cleaning
+        </a>
+      </section>
+
+      <!-- Specialized Cleaning -->
+      <section id="specialized" class="border rounded-lg p-6 shadow hover:shadow-lg transition max-w-md mx-auto flex flex-col">
+        <img
+          src="assets/images/specialized-cleaning.jpg"
+          alt="Specialized Cleaning"
+          class="rounded-md mb-4 object-cover h-40 w-full"
+          loading="lazy"
+        />
+        <h2 class="text-2xl font-semibold mb-1 text-blue-900 text-center">Specialized Cleaning</h2>
+        <p class="text-gray-600 mb-4 text-center text-sm">
+          Expert care for carpets, upholstery, appliances, and customized cleaning needs.
+        </p>
+        <ul class="list-disc list-inside space-y-1 text-gray-700 flex-grow">
+          <li>Carpet & Upholstery Cleaning</li>
+          <li>Appliance Cleaning</li>
+          <li>After-Builders Cleaning</li>
+          <li>Other Tailored Services</li>
+        </ul>
+        <a href="contact.html" class="mt-6 bg-yellow-400 text-white font-semibold py-2 px-4 rounded shadow hover:bg-yellow-500 transition self-center max-w-max">
+          Book Specialized Cleaning
+        </a>
+      </section>
+
+    </div>
+
+    <!-- WHY CHOOSE US -->
+    <section class="mt-20 max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-blue-900 mb-6">Why Choose JDAMIE Cleans?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-700">
+        <div>
+          <h3 class="font-semibold text-xl mb-2">Experienced Professionals</h3>
+          <p>Our cleaning staff is fully trained, vetted, and dedicated to excellence.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-xl mb-2">Eco-Friendly Products</h3>
+          <p>We use non-toxic, biodegradable cleaning solutions safe for you and the environment.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-xl mb-2">Flexible Scheduling</h3>
+          <p>Book weekly, biweekly, monthly, or one-off cleans to suit your lifestyle or business hours.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mt-20 max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-blue-900 mb-6 text-center">Frequently Asked Questions</h2>
+      <div class="space-y-6">
+        <details class="bg-gray-100 p-4 rounded shadow">
+          <summary class="cursor-pointer font-semibold text-lg hover:text-yellow-600">Do I need to be home during the cleaning?</summary>
+          <p class="mt-2 text-gray-700">No, you don’t have to be home. You can provide access instructions, and we’ll handle the rest.</p>
+        </details>
+        <details class="bg-gray-100 p-4 rounded shadow">
+          <summary class="cursor-pointer font-semibold text-lg hover:text-yellow-600">What cleaning products do you use?</summary>
+          <p class="mt-2 text-gray-700">We use eco-friendly and non-toxic cleaning products, but we can accommodate special requests if needed.</p>
+        </details>
+        <details class="bg-gray-100 p-4 rounded shadow">
+          <summary class="cursor-pointer font-semibold text-lg hover:text-yellow-600">Can I schedule a one-time deep clean?</summary>
+          <p class="mt-2 text-gray-700">Yes! We offer one-time deep cleaning services in addition to regular plans.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="mt-20 max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-blue-900 mb-10">What Our Customers Say</h2>
+      <div class="space-y-10">
+        <blockquote class="bg-gray-100 p-6 rounded shadow max-w-3xl mx-auto italic text-gray-700">
+          <p>"JDAMIE Cleans transformed my home with their meticulous attention to detail. Reliable and friendly service every time."</p>
+          <footer class="mt-4 font-semibold text-yellow-600">— Sarah K.</footer>
+        </blockquote>
+        <blockquote class="bg-gray-100 p-6 rounded shadow max-w-3xl mx-auto italic text-gray-700">
+          <p>"Our office has never looked better! The commercial team was professional and efficient."</p>
+          <footer class="mt-4 font-semibold text-yellow-600">— Mark D.</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="mt-20 bg-blue-900 rounded-lg p-10 text-white text-center max-w-3xl mx-auto shadow-lg">
+      <h2 class="text-3xl font-bold mb-4">Ready for a Sparkling Clean?</h2>
+      <p class="mb-6 max-w-xl mx-auto">
+        Contact us today to schedule your cleaning service or request a free, no-obligation quote!
+      </p>
+      <a href="contact.html" class="inline-block bg-yellow-400 text-blue-900 font-semibold py-3 px-8 rounded hover:bg-yellow-500 transition">
+        Get in Touch
+      </a>
+    </section>
+  </main>
+
+  <!-- GO TO TOP BUTTON -->
+<button onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+  class="fixed bottom-12 right-4 z-50 bg-yellow-400 text-blue-900 hover:bg-yellow-500 transition px-4 py-2 rounded-full shadow-md text-sm font-bold hidden"
+  id="goTopBtn" aria-label="Go to top">
+  ↑ Go to Top
+</button>
+
+<script>
+  // Show/hide the button on scroll
+  window.addEventListener('scroll', () => {
+    const btn = document.getElementById('goTopBtn');
+    if (window.scrollY > 200) {
+      btn.classList.remove('hidden');
+    } else {
+      btn.classList.add('hidden');
+    }
+  });
+</script>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-900 text-white text-center py-6 mt-12">
+    <p>&copy; 2025 JDAMIE Cleans. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

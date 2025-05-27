@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact JDAME Cleans – Reach out for fast, reliable cleaning service support." />
+  <title>JDAME Cleans | Contact</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body class="flex flex-col min-h-screen bg-white text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-blue-900 text-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between flex-wrap gap-4">
+      <a href="index.html" class="text-2xl font-bold tracking-tight">JDAME Cleans</a>
+      <nav class="flex gap-6 text-sm font-medium" aria-label="Main navigation">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="services.html" class="hover:underline">Services</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="contact.html" class="hover:underline underline decoration-yellow-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="flex-grow max-w-4xl mx-auto px-6 py-16 space-y-16">
+
+    <!-- Hero Title & Intro -->
+    <section class="text-center">
+      <h1 class="text-4xl font-extrabold text-blue-900 mb-4">We’d Love to Hear From You</h1>
+      <p class="text-lg text-gray-700">
+        The fastest way to get in touch with us is by filling out the form below.
+        Whether you need residential or commercial cleaning, we’re ready to help!
+      </p>
+    </section>
+
+    <!-- Contact Form (Primary Focus) -->
+    <section aria-labelledby="contact-form-section" class="bg-gray-50 p-8 rounded-lg shadow">
+      <h2 id="contact-form-section" class="text-2xl font-semibold text-center text-blue-900 mb-6">Send Us a Message</h2>
+      <form
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        class="space-y-6"
+      >
+        <input type="hidden" name="_next" value="thank-you.html" />
+
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-800">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="py-3 px-4 mt-5 block w-full border-gray-300 rounded-md shadow-sm focus:ring-yellow-400 focus:border-yellow-400"
+          />
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-800">Your Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="py-3 px-4 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-yellow-400 focus:border-yellow-400"
+          />
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-800">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-yellow-400 focus:border-yellow-400"
+          ></textarea>
+        </div>
+
+        <div class="text-center">
+          <button
+            type="submit"
+            class="bg-yellow-400 text-white font-semibold px-6 py-3 rounded shadow hover:bg-yellow-500 transition"
+          >
+            Send Message
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Alternative Contact Methods -->
+    <section class="text-center space-y-4 text-gray-700">
+      <h2 class="text-2xl font-semibold text-blue-900">Other Ways to Reach Us</h2>
+      <p>
+        <strong>WhatsApp 1:</strong>
+        <a href="https://wa.me/447881160100" target="_blank" class="inline-flex items-center gap-2 text-blue-900 hover:underline">
+          <i class="fab fa-whatsapp text-green-500"></i> 07881 160100
+        </a>
+      </p>
+      <p>
+        <strong>WhatsApp 2:</strong>
+        <a href="https://wa.me/447551118292" target="_blank" class="inline-flex items-center gap-2 text-blue-900 hover:underline">
+          <i class="fab fa-whatsapp text-green-500"></i> 07551 118292
+        </a>
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:jddamie8@gmail.com" class="text-blue-900 hover:underline">
+          <i class="fa fa-envelope text-blue-900 mr-1"></i> jddamie8@gmail.com
+        </a>
+      </p>
+      <p>
+        <strong>Location:</strong>
+        <i class="fa fa-map-marker text-red-400"></i> United Kingdom
+      </p>
+    </section>
+
+    <!-- Google Map -->
+    <section class="my-12">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.349023319!2d-0.510375!3d51.2867601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf9a7e9b%3A0xfcdba3f2ff2c2e47!2sLondon%2C%20UK!5e0!3m2!1sen!2suk!4v1716787021947!5m2!1sen!2suk"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        class="rounded shadow"
+        aria-label="Google Map showing London, UK"
+      ></iframe>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-900 text-white py-6 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 text-center text-sm">
+      &copy; 2025 JDAME Cleans. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Loading Spinner Script -->
+  <script>
+    const form = document.querySelector("form");
+    const button = form.querySelector("button");
+
+    form.addEventListener("submit", () => {
+      button.disabled = true;
+      button.innerHTML = `
+        <span class="inline-block animate-spin mr-2 w-4 h-4 border-2 border-white border-t-transparent rounded-full" role="status"></span>
+        Sending...
+      `;
+    });
+  </script>
+</body>
+</html>
