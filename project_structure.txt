@@ -1,4 +1,4 @@
-JD DAMIE-cleans/
+JDDAMIE-cleans/
 ├── index.html
 ├── about.html
 ├── services.html

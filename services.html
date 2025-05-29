@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="JD DAMIE Cleans – Professional residential and commercial cleaning services." />
-  <meta name="keywords" content="Cleaning, Residential, Commercial, JD DAMIE Cleans, Eco-friendly" />
+  <meta name="description" content="JDDAMIE Cleans – Professional residential and commercial cleaning services." />
+  <meta name="keywords" content="Cleaning, Residential, Commercial, JDDAMIE Cleans, Eco-friendly" />
   <link rel="icon" href="assets/images/logo.png" type="image/png" />
-  <title>JD DAMIE Cleans | Home</title>
+  <title>JDDAMIE Cleans | Home</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html {
       scroll-behavior: smooth;
+    }
+
+    /* Needed for smooth rotation & translation */
+    #menu-btn span {
+      transition: transform 0.3s ease, opacity 0.3s ease;
     }
   </style>
 </head>
@@ -18,17 +23,44 @@
 <body class="flex flex-col min-h-screen bg-white text-gray-800">
 
   <!-- HEADER -->
-  <header class="bg-blue-900 text-white shadow-md">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between flex-wrap gap-4">
-      <a href="index.html" class="flex items-center gap-2">
-        <img src="assets/images/logo.png" alt="JD DAMIE Cleans Logo" class="h-20 w-17 object-cover rounded-full" />
-        <span class="text-2xl font-bold tracking-tight">JD DAMIE Cleans</span>
-      </a>
-      <nav class="flex gap-6 text-sm font-medium" aria-label="Main navigation">
+  <header class="bg-blue-900 text-white shadow-md relative">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between relative">
+
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="JD DAMIE Cleans Logo" class="h-24 w-24 object-contain" />
+        </a>
+      </div>
+
+      <!-- Brand Title (Centered) -->
+      <h1 class="absolute left-1/2 transform -translate-x-1/2 text-xl sm:text-2xl font-bold tracking-tight">
+        JDDAMIE Cleans
+      </h1>
+
+      <!-- Hamburger (Mobile) -->
+      <button id="menu-btn" class="sm:hidden text-white text-3xl focus:outline-none z-30 relative w-8 h-8 flex flex-col justify-between">
+        <span class="block h-1 w-full bg-white rounded transition-transform origin-left"></span>
+        <span class="block h-1 w-full bg-white rounded transition-opacity"></span>
+        <span class="block h-1 w-full bg-white rounded transition-transform origin-left"></span>
+      </button>
+
+      <!-- Nav (Desktop) -->
+      <nav class="hidden sm:flex gap-6 text-sm font-medium">
         <a href="index.html" class="hover:underline">Home</a>
         <a href="services.html" class="hover:underline">Services</a>
         <a href="about.html" class="hover:underline">About</a>
         <a href="contact.html" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Mobile Nav Menu -->
+    <div id="mobile-menu" class="sm:hidden fixed inset-0 bg-blue-900/70 backdrop-blur-md transform -translate-y-full transition-transform duration-300 ease-in-out z-20">
+      <nav class="flex flex-col pt-24 px-6 space-y-6 text-white text-lg font-semibold">
+        <a href="index.html" class="block border-b border-blue-700 pb-2">Home</a>
+        <a href="services.html" class="block border-b border-blue-700 pb-2">Services</a>
+        <a href="about.html" class="block border-b border-blue-700 pb-2">About</a>
+        <a href="contact.html" class="block pb-2">Contact</a>
       </nav>
     </div>
   </header>
@@ -37,7 +69,7 @@
   <main class="flex-grow max-w-6xl mx-auto px-4 py-16">
     <h1 class="text-4xl font-extrabold text-blue-900 mb-4 text-center">Our Cleaning Services</h1>
     <p class="text-center text-gray-700 max-w-3xl mx-auto mb-12 leading-relaxed">
-      At JD DAMIE Cleans, we are committed to providing exceptional cleaning services tailored to your specific needs.
+      At JDDAMIE Cleans, we are committed to providing exceptional cleaning services tailored to your specific needs.
       Whether for your home or business, our expert team uses the latest techniques and eco-friendly products to
       ensure a spotless and healthy environment.
     </p>
@@ -134,7 +166,7 @@
 
     <!-- WHY CHOOSE US -->
     <section class="mt-20 max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold text-blue-900 mb-6">Why Choose JD DAMIE Cleans?</h2>
+      <h2 class="text-3xl font-bold text-blue-900 mb-6">Why Choose JDDAMIE Cleans?</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-700">
         <div>
           <h3 class="font-semibold text-xl mb-2">Experienced Professionals</h3>
@@ -175,7 +207,7 @@
       <h2 class="text-3xl font-bold text-blue-900 mb-10">What Our Customers Say</h2>
       <div class="space-y-10">
         <blockquote class="bg-gray-100 p-6 rounded shadow max-w-3xl mx-auto italic text-gray-700">
-          <p>"JD DAMIE Cleans transformed my home with their meticulous attention to detail. Reliable and friendly service every time."</p>
+          <p>"JDDAMIE Cleans transformed my home with their meticulous attention to detail. Reliable and friendly service every time."</p>
           <footer class="mt-4 font-semibold text-yellow-600">— Sarah K.</footer>
         </blockquote>
         <blockquote class="bg-gray-100 p-6 rounded shadow max-w-3xl mx-auto italic text-gray-700">
@@ -214,12 +246,35 @@
       btn.classList.add('hidden');
     }
   });
+
+
+  const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    const spans = menuBtn.querySelectorAll("span");
+
+    menuBtn.addEventListener("click", () => {
+      // Toggle slide menu
+      if (mobileMenu.classList.contains("-translate-y-full")) {
+        mobileMenu.classList.remove("-translate-y-full");
+        mobileMenu.classList.add("translate-y-0");
+      } else {
+        mobileMenu.classList.remove("translate-y-0");
+        mobileMenu.classList.add("-translate-y-full");
+      }
+
+      // Animate hamburger into X
+      spans[0].classList.toggle("rotate-45");
+      spans[0].classList.toggle("translate-y-2");
+      spans[1].classList.toggle("opacity-0");
+      spans[2].classList.toggle("-rotate-45");
+      spans[2].classList.toggle("-translate-y-2");
+    });
 </script>
 
 
   <!-- FOOTER -->
   <footer class="bg-blue-900 text-white text-center py-6 mt-12">
-    <p>&copy; 2025 JD DAMIE Cleans. All rights reserved.</p>
+    <p>&copy; 2025 JDDAMIE Cleans. All rights reserved.</p>
   </footer>
 
 </body>
